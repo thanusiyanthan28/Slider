@@ -1,0 +1,210 @@
+/* CardSlider.css */
+
+.card-slider {
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+
+
+}
+
+.cards-container {
+  display: flex;
+  transition: transform 0.3s ease;
+  align-items: center;
+  margin-left: 31.52%;
+ 
+  
+
+}
+
+.card {
+  flex: 0 0 300px;
+  margin: 20px 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+ 
+
+  
+
+}
+
+.card.active {
+  opacity: 1;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+.prev-btn,
+.next-btn {
+
+ 
+  transform: translateY(-50%);
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  padding: 0;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Makes it a circle */
+  cursor: pointer;
+  margin-top: -100px;
+
+}
+
+.prev-btn {
+  left: 0;
+  margin-left:-900px ;
+  
+}
+
+.next-btn {
+  right: 0;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #0056b3;
+}
+.my-class{
+  width: 70%;
+  border: 1;
+  /* background-color: tomato; */
+  padding: 10px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 50%;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  
+
+
+}
+.non-active{
+  filter: blur(0.5px); /* Adjust blur intensity as needed */
+
+}
+.card.active:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease; 
+
+
+}
+.non-active p,
+.non-active h2{
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.text{
+  display: flex;
+  background-color: #669399;
+  /* background-color: #007bff; */
+  border-radius: 5px;
+
+ 
+}
+.title{
+  width: 70%;
+  margin-left: 5px;
+}
+
+
+
+.date{
+  font-size: 25px;
+}
+
+.non-active .text{
+  background-color: rgba(0, 0, 0, 0.5);
+ 
+}
+.non-active h3  {
+position: absolute;
+margin-left: 20%;
+align-items: center;
+margin-top: 15%;
+
+
+} 
+.active .text .title h3,
+.active .text .title p {
+  position: relative;
+  margin-left: auto;
+  text-align: left;
+  color: bisque;
+
+ 
+ } 
+.main-date{
+  line-height: 40%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 5px;
+  color: #fff;
+  max-height: max-content;
+
+}
+.active .time {
+  margin-bottom: 50px;
+}
+
+
+
+@media (max-width: 440px) {
+  .cards-container {
+ margin-left: 95%;  
+  }
+}
+@media (width: 414px) {
+  .cards-container {
+ margin-left: 97%;   
+  }
+
+}
+@media (width: 360px) {
+  .cards-container {
+ margin-left: 120%; 
+  }
+}
+@media (width: 412px) {
+  .title h3,
+  .title p{
+    margin-left: 1px;
+  }
+  .prev-btn,
+.next-btn{
+
+  position: relative;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 10px;
+}
+}
+
+
+
+
